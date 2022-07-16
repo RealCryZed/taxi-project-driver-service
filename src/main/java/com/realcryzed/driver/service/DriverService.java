@@ -21,6 +21,10 @@ public class DriverService {
         return driverRepository.getDriverByDriverId(id);
     }
 
+    public Driver getDriverByCity(String city) {
+        return driverRepository.getDriverByCity(city);
+    }
+
     public List<Driver> getAllDrivers() {
         return driverRepository.findAll();
     }

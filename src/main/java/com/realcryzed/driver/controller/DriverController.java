@@ -23,6 +23,11 @@ public class DriverController {
         return driverService.getDriverByDriverId(id);
     }
 
+    @GetMapping("/driver/{city}")
+    public Driver getDriverByCity(@PathVariable String city) {
+        return driverService.getDriverByCity(city);
+    }
+
     @GetMapping("/drivers")
     public List<Driver> getDriverById() {
         return driverService.getAllDrivers();
